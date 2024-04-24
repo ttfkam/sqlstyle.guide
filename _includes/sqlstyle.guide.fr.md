@@ -9,7 +9,7 @@ Style][celko] de Joe Celko afin de faciliter leur adoption par les équipes qui 
 
 Il est aisé d'inclure ce guide au [format Markdown][dl-md] dans la base de code d'un projet, ou de l'y référencer pour que tout·e membre du projet puisse le lire librement, ce qui est bien plus dur à faire avec un livre physique.
 
-Ce guide de style SQL par [Simon Holywell][simon] est proposé sous licence [Creative Commons 
+Ce guide de style SQL par [Simon Holywell][simon] est proposé sous licence [Creative Commons
 Attribution-Partage dans les Mêmes Conditions 4.0 International][licence].
 Fondé sur un travail disponible sur [https://www.sqlstyle.guide/][sqlstyleguide].
 
@@ -19,7 +19,7 @@ Fondé sur un travail disponible sur [https://www.sqlstyle.guide/][sqlstyleguide
 
 * Utilisez des identifiants et noms cohérents et descriptifs.
 * Faites un usage judicieux de l'espace et de l'indentation afin de faciliter la lecture du code.
-* Utilisez la norme [ISO 8601][iso-8601] pour les informations temporelles (`YYYY-MM-DD HH:MM:SS.SSSSS`).
+* Utilisez la norme [ISO 8601][iso-8601] pour les informations temporelles (`YYYY-MM-DDTHH:MM:SS.SSSSS`).
 * Essayez de n'utiliser que des fonctions SQL standard au lieu des fonctions spécifiques à chaque SGBD pour des raisons de portabilité.
 * Gardez le code court et évitez les redondances comme les parenthèses ou guillemets superflus, ou encore les clauses `WHERE` qui peuvent être dérivées.
 * Commentez le code SQL lorsque c'est nécessaire. Utilisez le style de commentaires du langage C, en ouvrant avec `/*` et fermant avec `*/` là où c'est possible, autrement débutez les commentaires avec `--` et faites-les suivre par une nouvelle ligne.
@@ -39,7 +39,7 @@ UPDATE file_system
 
 ### À éviter
 
-* Le CamelCase — c'est difficile à lire rapidement.
+* Le camelCase — c'est difficile à lire rapidement.
 * Les préfixes descriptifs ou les notations hongroises comme `sp_` ou `tbl`.
 * Les pluriels — à la place, utilisez le terme collectif le plus naturel quand c'est possible. Par exemple `staff` au lieu de `employees` ou `people` au lieu de `individuals`.
 * Identifiants entre guillemets — si vous devez les utiliser, limitez-vous aux doubles guillemets SQL-92 pour la portabilité (selon le SGBD, vous aurez peut-être besoin de configurer votre serveur SQL pour qu'il soit compatible).

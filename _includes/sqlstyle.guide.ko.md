@@ -25,7 +25,7 @@
 * 일관적이고 기술적인(descriptive) 식별자와 이름을 사용하라.
 * 가독성을 위해 공백과 들여쓰기를 신중하게 사용하라.
 * [ISO 8601][iso-8601]를 따르는 시간 및 날짜 정보를 저장하라.
-  (`YYYY-MM-DD HH:MM:SS.SSSSS`)
+  (`YYYY-MM-DDTHH:MM:SS.SSSSS`)
 * 이식성을 위해 벤더-특화된 함수 대신 표준 SQL 함수만을 사용하라.
 * 불필요한 따옴표나 괄호, 다른 구문을 통해 파생될 수 있는 `WHERE`절과 같은 불필요한 SQL을 피하고
   간결하게 유지하라.
@@ -47,7 +47,7 @@ UPDATE file_system
 
 ### Avoid
 
-* CamelCase. — 빠르게 스캔하기 어렵다.
+* camelCase. — 빠르게 스캔하기 어렵다.
 * 설명 접두사 또는 `sp_`, `tbl`과 같은 헝가리안 표기법.
 * 복수. — 가능한 경우 더 자연스러운 집합 명사를 사용하라. 예를 들어, `employees` 대신 `staff`를,
   `individuals` 대신 `people`을 사용하라.

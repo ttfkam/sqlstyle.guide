@@ -16,7 +16,7 @@ It is easy to include this guide in [Markdown format][dl-md] as a part of a
 project's code base or reference it here for anyone on the project to freely
 read—much harder with a physical book.
 
-SQL style guide by [Simon Holywell][simon] is licensed under a [Creative Commons 
+SQL style guide by [Simon Holywell][simon] is licensed under a [Creative Commons
 Attribution-ShareAlike 4.0 International License][licence].
 Based on a work at [https://www.sqlstyle.guide/][sqlstyleguide].
 
@@ -27,7 +27,7 @@ Based on a work at [https://www.sqlstyle.guide/][sqlstyleguide].
 * Use consistent and descriptive identifiers and names.
 * Make judicious use of white space and indentation to make code easier to read.
 * Store [ISO 8601][iso-8601] compliant time and date information
-  (`YYYY-MM-DD HH:MM:SS.SSSSS`).
+  (`YYYY-MM-DDTHH:MM:SS.SSSSS`).
 * Try to only use standard SQL functions instead of vendor-specific functions for
   reasons of portability.
 * Keep code succinct and devoid of redundant SQL—such as unnecessary quoting or
@@ -51,7 +51,7 @@ UPDATE file_system
 
 ### Avoid
 
-* CamelCase—it is difficult to scan quickly.
+* camelCase—it is difficult to scan quickly.
 * Descriptive prefixes or Hungarian notation such as `sp_` or `tbl`.
 * Plurals—use the more natural collective term where possible instead. For example
   `staff` instead of `employees` or `people` instead of `individuals`.
@@ -267,6 +267,16 @@ SELECT r.last_name
        INNER JOIN crew AS c
        ON r.crew_chief_last_name = c.last_name
           AND c.chief = 'Y';
+```
+
+The exception to this is when using just the `JOIN` keyword where it should be
+before the river.
+
+```sql
+SELECT r.last_name
+  FROM riders AS r
+  JOIN bikes AS b
+    ON r.bike_vin_num = b.vin_num
 ```
 
 #### Subqueries

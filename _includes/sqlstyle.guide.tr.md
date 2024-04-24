@@ -18,7 +18,7 @@ Bu rehberi bir projenin kod tabanının bir parçası olarak [Markdown
 formatında][dl-md] eklemek veya projedeki herkesin özgürce okuması için burada
 referans vermek kolaydır - fiziksel bir kitapla bu çok daha zordur.
 
-[Simon Holywell][simon] tarafından hazırlanan bu SQL stil rehberi [Creative Commons 
+[Simon Holywell][simon] tarafından hazırlanan bu SQL stil rehberi [Creative Commons
 Attribution-ShareAlike 4.0 International License][licence] lisansı ile lisanslanmıştır.
 [https://www.sqlstyle.guide/][sqlstyleguide]'daki çalışmaya dayanarak.
 
@@ -29,7 +29,7 @@ Attribution-ShareAlike 4.0 International License][licence] lisansı ile lisansla
 * Uygun ve açıklayıcı isimler kullanın.
 * Girintileri ve boşlukları güzelce kullanarak kodu daha okunabilir yapın.
 * Tarih ve zaman bilgisini [ISO 8601][iso-8601] uygunluğunda depolayın
-  (`YYYY-MM-DD HH:MM:SS.SSSSS`).
+  (`YYYY-MM-DDTHH:MM:SS.SSSSS`).
 * Taşınabilirlik için dağıtıma/versiyona özel fonksiyonlar yerine sadece
   standart SQL fonksiyonlarını kullanmaya çalışın.
 * Gereksiz tırnak işareti veya başka türlü de türetilebilecek `WHERE`
@@ -54,7 +54,7 @@ UPDATE file_system
 
 ### Bunlardan Kaçın
 
-* CamelCase—hızlı taranması için zor.
+* camelCase—hızlı taranması için zor.
 * Tanımlayıcı önekler ya da Hungarian gösterimi: `sp_` veya `tbl`.
 * Çoğullar—mümkün olduğunda daha doğal ve genel bir terim kullanın.
   Örneğin `employees` yerine `staff` ya da `individuals` yerine `people`.

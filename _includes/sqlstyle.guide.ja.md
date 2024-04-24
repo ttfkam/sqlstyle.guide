@@ -2,9 +2,9 @@
 
 ***
 
-**日本語訳について**  
+**日本語訳について**
 
-日本語訳は誤訳や[原文の最新版][sqlstyleguide]に追随していない恐れがあります。誤訳や改善点があれば、GitHubの[issue][issue]または[pull request][pull]を使用するか、[Twitter][twitter-ja]でお知らせください。  
+日本語訳は誤訳や[原文の最新版][sqlstyleguide]に追随していない恐れがあります。誤訳や改善点があれば、GitHubの[issue][issue]または[pull request][pull]を使用するか、[Twitter][twitter-ja]でお知らせください。
 翻訳: 久利史之 [@nkuritw][twitter-ja]
 
 [twitter-ja]: https://twitter.com/nkuritw
@@ -13,11 +13,11 @@
 
 ## 概要
 
-このガイドラインは利用の他、[fork][fork]したり、自分自身のものに改変したりすることができます。ここで大事なのはスタイルを選択しそれを踏襲することです。変更の提案やバグの修正にはGitHubの[issue][]または[pull request][pull]を使用してください。 
+このガイドラインは利用の他、[fork][fork]したり、自分自身のものに改変したりすることができます。ここで大事なのはスタイルを選択しそれを踏襲することです。変更の提案やバグの修正にはGitHubの[issue][]または[pull request][pull]を使用してください。
 
-このガイドラインは『[Joe Celko's SQL Programming Style][celko]』と互換性があり、すでにその本を読んだことがあるチームにとっては適用が容易です。このガイドはより独断的な部分もあればより緩やかな部分もあります。Celkoの書籍は各ルールの背後にあるエピソードや根拠を詳細に掲載していますが、このガイドはより簡潔になっています。 
+このガイドラインは『[Joe Celko's SQL Programming Style][celko]』と互換性があり、すでにその本を読んだことがあるチームにとっては適用が容易です。このガイドはより独断的な部分もあればより緩やかな部分もあります。Celkoの書籍は各ルールの背後にあるエピソードや根拠を詳細に掲載していますが、このガイドはより簡潔になっています。
 
-このガイドの[Markdown版][dl-md]を活用すれば、紙の本では難しいプロジェクトのコード規約に含めたり、プロジェクトの参加者がその場で参照し自由に読んだりすることが容易になります。 
+このガイドの[Markdown版][dl-md]を活用すれば、紙の本では難しいプロジェクトのコード規約に含めたり、プロジェクトの参加者がその場で参照し自由に読んだりすることが容易になります。
 
 SQLスタイルガイド by [Simon Holywell][simon] は、[クリエイティブ・コモンズ 表示-継承4.0国際ライセンス][licence-ja]の下にあります。原本は[https://www.sqlstyle.guide][sqlstyleguide]です。
 
@@ -27,7 +27,7 @@ SQLスタイルガイド by [Simon Holywell][simon] は、[クリエイティブ
 
 * 一貫性があり説明的な識別子と名前を使用する。
 * スペースとインデントを慎重に使用しコードを読みやすくする。
-* [ISO-8601][iso-8601]に準拠した日付時間フォーマット（`YYYY-MM-DD HH:MM:SS.SSSSS`）で格納する。
+* [ISO-8601][iso-8601]に準拠した日付時間フォーマット（`YYYY-MM-DDTHH:MM:SS.SSSSS`）で格納する。
 * 移植性のためベンダー固有の関数の代わりに標準のSQL関数のみを使用する。
 * コードを簡潔で冗長なSQLのない状態に保つ。例えば、不必要なクォート、括弧、他の条件と重なる `WHERE` 句は避ける。
 * 必要に応じてSQLコードにコメントを挿入する。可能なら `/*` で始まり `*/` で終わるC言語スタイルのコメントを使用し、その他の場合、`--` で始まり改行で終わる行コメントを使用する。
@@ -47,7 +47,7 @@ UPDATE file_system
 
 ### 非推奨
 
-* CamelCase - 読みづらくなる。
+* camelCase - 読みづらくなる。
 * 説明的接頭辞やハンガリアン記法（`sp_`または`tbl`など）。
 * 複数形 - できるだけ集合体を表す用語を使用する。たとえば`employees`の代わりに`staff`、または`individuals`の代わりに`people`を使用する。
 * 引用符で囲まれた識別子 - 使用しなければならない場合、移植性のためSQL92の二重引用符が欠かせなくなる（ベンダーによってはサーバーを構成する必要がある）。
@@ -1200,7 +1200,7 @@ ZONE
 [rivers]: https://practicaltypography.com/one-space-between-sentences.html
     "Practical Typography: one space between sentences"
 [reserved-keywords]: #reserved-keyword-reference
-    "Reserved keyword reference" 
+    "Reserved keyword reference"
 [eav]: https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model
     "Wikipedia: Entity-attribute-value model"
 [sqlstyleguide]: https://www.sqlstyle.guide

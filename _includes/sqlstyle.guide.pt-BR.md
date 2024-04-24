@@ -30,7 +30,7 @@ Baseado no trabalho em [https://www.sqlstyle.guide][sqlstyleguide].
 * Tenha critério ao utilizar espaços em branco e indentação para melhorar
   a legibilidade do código.
 * Armazene informações de data e hora compatíveis com [ISO-8601][iso-8601]
-  (`YYYY-MM-DD HH:MM:SS.SSSSS`).
+  (`YYYY-MM-DDTHH:MM:SS.SSSSS`).
 * Por questões de portabilidade, tente utilizar apenas funções SQL padrão no lugar
   de funções específicas de servidores SQL de fornecedores.
 * Mantenha o código sucinto e desprovido de SQL redundante—como adição de aspas
@@ -54,7 +54,7 @@ UPDATE file_system
 
 ### Evite
 
-* CamelCase—difícil de se analisar rapidamente.
+* camelCase—difícil de se analisar rapidamente.
 * Prefixos descritivos ou notação húngara como `sp_` ou `tbl`.
 * Plurais—utilize termos coletivos onde possível. Por exemplo,
   `pessoal` ao invés de `funcionários` ou `pessoa` no lugar de `indivíduos`.
@@ -72,7 +72,7 @@ UPDATE file_system
 * Mantenha o tamanho máximo em 30 bytes—na prática isso são
   30 caracteres, a não ser que esteja utilizando um conjunto de
   caracteres multi-byte.
-* Nomes devem começar com uma letra e não devem terminar com underscore.  
+* Nomes devem começar com uma letra e não devem terminar com underscore.
 * Utilize apenas letras, números e underscores em nomes.
 * Evite o uso de múltiplos underscores consecutivos—eles podem ser difíceis de
 se ler.
