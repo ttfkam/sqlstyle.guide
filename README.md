@@ -68,6 +68,7 @@ description of your deviance.
 * [Mozilla](https://github.com/mozilla/firefox-data-docs/blob/master/concepts/sql_style.md) - removed the river, heavily modified [www](https://docs.telemetry.mozilla.org/concepts/sql_style.html)
 * [Ricardo.ch](https://ricardo-ch.github.io/sqlstyle.guide/)
 * [Scout24](https://github.com/Scout24/sqlstyle.guide)
+* [T-SQL style guide by John McCall](https://tsqlstyle.lowlydba.com/)
 
 
 [md-lang]: https://daringfireball.net/projects/markdown/
